@@ -11,9 +11,9 @@ pool:
 
 variables:
   solution: '**/*.sln'
-  buildPlatform: ''
-  buildConfiguration: ''
-  appxPackageDir: ''
+  buildPlatform: 'x86|x64|ARM'
+  buildConfiguration: 'Release'
+  appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
 
 steps:
 - task: NuGetToolInstaller@0
